@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Patient status:</strong>
+  <%= @account_history.patient_status %>
+</p>
+
+<p>
+  <strong>Account Number</strong>
+  <%= @account_history.account.account_number %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_account_history_path(@account_history) %> |
+<%= link_to 'Back', account_histories_path %>
